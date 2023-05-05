@@ -1,0 +1,20 @@
+.menu-bar {
+    height: 70px;
+    padding-right:23%;
+    border-bottom: 1px solid #f8f8f8;
+  }
+  
+  .menu-bar ul {
+    width: 60%;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+  
+  .menu-bar li, .menu-bar li a {
+    list-style: none;
+    text-decoration: none;
+    color: #171735;
+    font-size: 24px;;
+  }
+    

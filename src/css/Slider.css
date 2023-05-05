@@ -1,0 +1,43 @@
+.slider-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.slider-item {
+  flex-shrink: 0;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.slider-item.active {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
