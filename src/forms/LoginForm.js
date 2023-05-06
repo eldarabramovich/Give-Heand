@@ -1,6 +1,9 @@
 // LoginForm.js
 import React, { useState } from 'react';
 import '../css/LoginForm.css';
+import email_icon from '../assets/cd-icon-email.svg';
+import password_icon from '../assets/cd-icon-password.svg';
+import username from '../assets/cd-icon-username.svg'
 
 function LoginForm() {
   const [email, setEmail] = useState('');
@@ -12,11 +15,14 @@ function LoginForm() {
   };
 
   return (
+    
     <div className="login-form">
+      <h2>התחברות</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">איימיל:</label>
-          <input
+          <label className="email-label" htmlFor="email">.</label>
+          <input className="form-input"
+            placeholder="אימייל"
             type="email"
             id="email"
             name="email"
@@ -26,8 +32,9 @@ function LoginForm() {
           />
         </div>
         <div>
-          <label htmlFor="password">סיסמא:</label>
-          <input
+          <label className="password-label" htmlFor="password">.</label>
+          <input className="form-input"
+            placeholder="סיסמה" 
             type="password"
             id="password"
             name="password"
@@ -36,7 +43,7 @@ function LoginForm() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button className="form-btn" type="submit">התחברות</button>
       </form>
       <div className="links">
         <a href="#">שחכתי סיסמא</a>

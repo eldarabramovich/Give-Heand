@@ -1,7 +1,6 @@
 .slider-container {
   position: relative;
   display: flex;
-  overflow: hidden;
 }
 
 .slider-content {
@@ -15,6 +14,7 @@
   width: 100%;
   overflow: hidden;
   display: none;
+  gap: 15px;
 }
 
 .slider-item.active {
@@ -34,10 +34,25 @@
   cursor: pointer;
 }
 
+.prev, .next {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: #171735;
+  border: 1px solid #171735;
+}
+
 .prev {
-  left: 10px;
+  right: -60px;
 }
 
 .next {
-  right: 10px;
+  left: -60px;
+}
+
+.prev:hover, .next:hover {
+  background: #00ADEF;
+  border-color: #00ADEF;
+  color: #fff;
 }
