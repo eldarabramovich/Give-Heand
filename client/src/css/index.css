@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+* > a {
+    cursor: pointer;
+}
+
+* > button {
+    cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}
+
+button {
+    font-family: 'Assistant', sans-serif;
+}
+
+.boxed {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    color: #171735;
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+    .boxed {
+        
+        width:90%;
+
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .boxed {
+        
+        width:1320px;
+
+    }
+
+}

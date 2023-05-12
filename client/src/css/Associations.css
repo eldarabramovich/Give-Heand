@@ -1,0 +1,21 @@
+.assoPage {
+    flex-direction: column;
+    font-size: 35px;
+  }
+  
+  .cards-section {
+    padding: 60px 0;
+    display: grid;                     /* Change from flex to grid */
+    grid-template-columns: repeat(3, 1fr); /* Add this line */
+    grid-gap: 20px;                   /* Add this line */
+  }
+  
+  .cards-section h2 {
+    color: #00ADEF;
+  }
+  
+  .search-input {
+    margin-top: 13px;
+    margin-bottom: -20px;
+  }
+  
